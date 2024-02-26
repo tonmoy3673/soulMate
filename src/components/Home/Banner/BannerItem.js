@@ -1,12 +1,16 @@
+'use client'
 import React from 'react';
 import './BannerItem.css';
 
 const BannerItem = ({slide}) => {
-    const {image, id, prev, next} = slide;
+    console.log(slide);
+    const {image, id, prev, next} = slide ?? {};
+    console.log(id, prev, next);
     return (
         <div id={`slide${id}`} className="carousel-item relative w-full font-[Courgette]">
+           
                 <div className='carousel-img'>
-                    <img src={image} alt="" className="w-full" />
+                    <img src={image} alt="img" className="w-full" />
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-56">
                     <h1 className='md:text-6xl text-2xl font-bold text-white'>

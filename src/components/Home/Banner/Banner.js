@@ -1,12 +1,12 @@
+'use client';
 import React from 'react';
-import img1 from '../../../Images/BannerImage/image1.jpg';
-import img2 from '../../../Images/BannerImage/image2.jpg';
-import img3 from '../../../Images/BannerImage/image1.jpg';
-import img4 from '../../../Images/BannerImage/image1.jpg';
-import img5 from '../../../Images/BannerImage/image1.jpg';
-import img6 from '../../../Images/BannerImage/image1.jpg';
+import img1 from '@/Images/BannerImage/image1.jpg';
+import img2 from '@/Images/BannerImage/image1.jpg';
+import img3 from '@/Images/BannerImage/image1.jpg';
+import img4 from '@/Images/BannerImage/image1.jpg';
+import img6 from '@/Images/BannerImage/image1.jpg';
 
-import BannerItem from './BannerItem';
+import BannerItem from './BannerItem.css';
 
 const bannerData = [
     {
@@ -33,12 +33,7 @@ const bannerData = [
         id: 4,
         next: 5
     },
-    {
-        image: img5,
-        prev: 4,
-        id: 5,
-        next: 6
-    },
+   
     {
         image: img6,
         prev: 5,
@@ -51,10 +46,7 @@ const Banner = () => {
     return (
         <div className="carousel">
             {
-                bannerData.map(slide => <BannerItem
-                    key={slide.id}
-                    slide={slide}
-                ></BannerItem>)
+                bannerData.map(slide => <BannerItem  key={slide.id} slide={slide}/>)
             }
             
         </div>

@@ -1,6 +1,4 @@
 import React from "react";
-import about1 from "../../../assets/images/about-us/about1.jpg";
-import about2 from "../../../assets/images/about-us/about2.jpg";
 
 const About = () => {
   return (
@@ -27,18 +25,11 @@ const About = () => {
             in Wedding Photography
             <br />& Cinematography{" "}
           </h1>
-          <p className="py-5">
-            greetings, I am shourov hasan. I am a Professional Photographer. I
-            am Experienced in Wedding Photography & Cinematography, and other
-            event management. you can see my work please visite the site.
-          </p>
-          <p className="py-5">
-            I am requesting you to visit My Site, check my gallery and service
-            to take your treasured decision of your lifetime events.
-          </p>
+          <p className="py-5">greetings, please visit the site.</p>
+          <p className="py-5">I am requesting you to visit My Site.</p>
           <p className="pb-8">
-            <span className="font-bold">Address: </span>{" "}
-            Zigatola,Dhanmondi,Dhaka,Bangladesh.
+            <span className="font-bold">Address: </span> Chuadanga Sadar,
+            Chuadanga,Bangladesh.
           </p>
           <button className="custom-button">Get More Info</button>
         </div>
