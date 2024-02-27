@@ -18,15 +18,6 @@ const Header = () => {
         >
           Login
         </Link>
-        <Link
-          href="/feedback"
-          className="text-blue-500 hover:text-orange-600 me-4"
-        >
-          Feedback
-        </Link>
-        <Link href="/user" className="text-blue-500 hover:text-orange-600 me-4">
-          User
-        </Link>
       </ul>
     </div>
   );
